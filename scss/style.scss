@@ -24,12 +24,13 @@ header#header {
         position: absolute;
         top: 0; left: 0; z-index: -1;
         display: block;
-        background: url("../img/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat center/cover;
-        -webkit-filter: brightness(.4);
-        -moz-filter: brightness(.4);
-        -o-filter: brightness(.4);
-        -ms-filter: brightness(.4);
-        filter: brightness(.4);
+        background: url("../img/cdc-GDokEYnOfnE-unsplash.jpg") no-repeat center/cover;
+        background-position: 0% 30%;
+        -webkit-filter: brightness(.7);
+        -moz-filter: brightness(.7);
+        -o-filter: brightness(.7);
+        -ms-filter: brightness(.7);
+        filter: brightness(.7);
     }
     .top {
         width: 100%; height: $heightHeaderTop;
@@ -37,6 +38,13 @@ header#header {
         position: relative;
 
         >h1 {
+            >img {
+                //https://codepen.io/sosuke/pen/Pjoqqp
+                //color: #14BF96;
+                filter: invert(70%) sepia(74%) saturate(3687%) hue-rotate(122deg) brightness(95%) contrast(84%);
+                width: 50px;
+                vertical-align: middle;
+            }
             font: bold 30px/1 "Malgun gothic"; color: #fff;
 
             height: 35px;
@@ -147,6 +155,7 @@ header#header {
             padding: 10px 15px; box-sizing: border-box;
             border-radius: 3px;
             font: normal 14px/1 "Malgun gothic"; color: #fff;
+            margin-right: 10px;
         }
     }
 }
@@ -161,11 +170,11 @@ section#detail1 {
     $detailArticleWidth : calc( ( 100% - 36px ) / 3 );
     article {
         float: left; 
-        width: $detailArticleWidth;
+        width: $detailArticleWidth; height: 150px;
         margin-right: 15px; margin-top: 20px;
         background-color: #fff;
         border: 1px solid #ccc; box-sizing: border-box;
-        padding: 25px 15px; box-sizing: border-box;
+        padding: 20px 15px; box-sizing: border-box;
         border-radius: 5px;
 
         &:nth-of-type(3n) {
@@ -189,15 +198,25 @@ section#detail1 {
             float: right;
             width: calc( 100% - 40px);
 
-            padding: 10px 20px; box-sizing: border-box;
+            padding: 5px 20px; box-sizing: border-box;
+            position: relative;
             >h1 {
                 font: bold 16px/1 "Malgun gothic"; color: #000;
 
             }
             >p {
                 width: 100%;
-                margin-top: 20px;
+                margin-top: 15px;
                 font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+            >a {
+                margin-top: 10px;
+                display: inline-block;
+                background-color: $primaryColor;
+                border-radius: 3px;
+                padding: 10px 15px; box-sizing: border-box;
+                font: normal 13px/1 "Malgun gothic"; color: #fff;
+                position: absolute; top: 63px;
             }
         }
     }
@@ -217,6 +236,10 @@ section#detail1 {
             }
             >p {
                 color: #fff;
+            }
+            >a {
+                background-color: #fff;
+                color: $primaryColor;
             }
         }
         >div.point {
@@ -279,8 +302,8 @@ section#detail2 {
                 border-radius: 3px;
                 font: normal 14px/1 "Malgun gothic"; color: #000;
             }
-            >a:nth-of-type(1) {
-                margin-right: 10px;
+            >a:nth-of-type(1), >a:nth-of-type(2) {
+                margin-right: 5px;
             }
             >a:nth-of-type(2) {
                 background-color: $primaryColor;
@@ -290,26 +313,32 @@ section#detail2 {
     }
 }
 section#inquiry {
-    width: 100%; height: 80px;
+    width: 100%; height: 100px;
     background-color: $subColor2;
 
     form#form {
-        position: absolute; top: 20px;
-        height: 30px;
+        position: absolute; top: 26px;
+        height: 100px;
 
         >fieldset {
             border: none; 
             position: relative;
+            >span {
+                font: normal 20px/1 "Malgun gothic"; color: #fff;
+                margin-right: 50px;
+            }
             >input[type="text"] {
-                height: 30px;
+                height: 50px; width: 350px;
                 border: none;
                 border-radius: 3px;
                 font: normal 14px/1 "Malgun gothic"; color: #000;
                 padding-left: 15px; box-sizing: border-box;
+                margin-right: 20px;
             }
             >select {
-                width: 100px;
-                height: 32px;
+                vertical-align: top;
+                width: 200px;
+                height: 50px;
                 border: none;
                 border-radius: 3px;
                 font: normal 12px/1 "Malgun gothic"; color: #000;
@@ -360,20 +389,24 @@ section#news {
             }
             >h2 {
                 margin-top: 15px;
-                font: bold 22px/1 "Malgun gothic"; color: #000; letter-spacing: -1px;
+                font: bold 25px/1 "Malgun gothic"; color: #000; letter-spacing: -1px;
             }
             >h3 {
                 position: relative; top: -3px;
-                font: bold 30px/1 "Malgun gothic"; color: #000;
+                font: bold 35px/1 "Malgun gothic"; color: #000;
+                letter-spacing: -1px;
             }
             >p {
                 margin-top: 20px;
             }
             >a {
+                >i {
+                    margin-right:5px;
+                }
                 margin-top: 30px;
                 display: inline-block;
                 background-color: #000;
-                padding: 10px 15px; box-sizing: border-box;
+                padding: 10px 25px; box-sizing: border-box;
                 border-radius: 3px;
                 font: normal 12px/1 "Malgun gothic"; color: #fff;
             }
@@ -385,6 +418,8 @@ section#news {
         }
         >.item:nth-of-type(3) {
             background-color: $primaryColor;
+            border: none;
+            box-shadow: 5px 5px 5px #aaa;
         }
     }
 }

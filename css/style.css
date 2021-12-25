@@ -24,12 +24,13 @@ header#header {
     left: 0;
     z-index: -1;
     display: block;
-    background: url("../img/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat center/cover;
-    -webkit-filter: brightness(0.4);
-    -moz-filter: brightness(0.4);
-    -o-filter: brightness(0.4);
-    -ms-filter: brightness(0.4);
-    filter: brightness(0.4); }
+    background: url("../img/cdc-GDokEYnOfnE-unsplash.jpg") no-repeat center/cover;
+    background-position: 0% 30%;
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
+    filter: brightness(0.7); }
   header#header .top {
     width: 100%;
     height: 100px;
@@ -43,6 +44,10 @@ header#header {
       top: 50%;
       margin-top: calc(35px / -2);
       left: 0; }
+      header#header .top > h1 > img {
+        filter: invert(70%) sepia(74%) saturate(3687%) hue-rotate(122deg) brightness(95%) contrast(84%);
+        width: 50px;
+        vertical-align: middle; }
     header#header .top > .wrap {
       height: 35px;
       position: absolute;
@@ -144,7 +149,8 @@ header#header {
       box-sizing: border-box;
       border-radius: 3px;
       font: normal 14px/1 "Malgun gothic";
-      color: #fff; }
+      color: #fff;
+      margin-right: 10px; }
 
 section#detail1 {
   width: 100%;
@@ -157,12 +163,13 @@ section#detail1 {
   section#detail1 article {
     float: left;
     width: calc( ( 100% - 36px ) / 3 );
+    height: 150px;
     margin-right: 15px;
     margin-top: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 25px 15px;
+    padding: 20px 15px;
     box-sizing: border-box;
     border-radius: 5px; }
     section#detail1 article:nth-of-type(3n) {
@@ -183,16 +190,28 @@ section#detail1 {
     section#detail1 article > .wrap {
       float: right;
       width: calc( 100% - 40px);
-      padding: 10px 20px;
-      box-sizing: border-box; }
+      padding: 5px 20px;
+      box-sizing: border-box;
+      position: relative; }
       section#detail1 article > .wrap > h1 {
         font: bold 16px/1 "Malgun gothic";
         color: #000; }
       section#detail1 article > .wrap > p {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 15px;
         font: normal 14px/1 "Malgun gothic";
         color: #000; }
+      section#detail1 article > .wrap > a {
+        margin-top: 10px;
+        display: inline-block;
+        background-color: #1455a9;
+        border-radius: 3px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        font: normal 13px/1 "Malgun gothic";
+        color: #fff;
+        position: absolute;
+        top: 63px; }
   section#detail1 article:nth-of-type(5) {
     background-color: #1455a9;
     box-shadow: 5px 5px 5px #ccc;
@@ -204,6 +223,9 @@ section#detail1 {
       color: #fff; }
     section#detail1 article:nth-of-type(5) > .wrap > p {
       color: #fff; }
+    section#detail1 article:nth-of-type(5) > .wrap > a {
+      background-color: #fff;
+      color: #1455a9; }
     section#detail1 article:nth-of-type(5) > div.point {
       position: absolute;
       right: 0;
@@ -267,34 +289,41 @@ section#detail2 {
         border-radius: 3px;
         font: normal 14px/1 "Malgun gothic";
         color: #000; }
-      section#detail2 article > .wrap > a:nth-of-type(1) {
-        margin-right: 10px; }
+      section#detail2 article > .wrap > a:nth-of-type(1), section#detail2 article > .wrap > a:nth-of-type(2) {
+        margin-right: 5px; }
       section#detail2 article > .wrap > a:nth-of-type(2) {
         background-color: #1455a9;
         color: #fff; }
 
 section#inquiry {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #3d4959; }
   section#inquiry form#form {
     position: absolute;
-    top: 20px;
-    height: 30px; }
+    top: 26px;
+    height: 100px; }
     section#inquiry form#form > fieldset {
       border: none;
       position: relative; }
+      section#inquiry form#form > fieldset > span {
+        font: normal 20px/1 "Malgun gothic";
+        color: #fff;
+        margin-right: 50px; }
       section#inquiry form#form > fieldset > input[type="text"] {
-        height: 30px;
+        height: 50px;
+        width: 350px;
         border: none;
         border-radius: 3px;
         font: normal 14px/1 "Malgun gothic";
         color: #000;
         padding-left: 15px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        margin-right: 20px; }
       section#inquiry form#form > fieldset > select {
-        width: 100px;
-        height: 32px;
+        vertical-align: top;
+        width: 200px;
+        height: 50px;
         border: none;
         border-radius: 3px;
         font: normal 12px/1 "Malgun gothic";
@@ -353,25 +382,28 @@ section#news {
         color: #000; }
       section#news .wrap > .subject > h2 {
         margin-top: 15px;
-        font: bold 22px/1 "Malgun gothic";
+        font: bold 25px/1 "Malgun gothic";
         color: #000;
         letter-spacing: -1px; }
       section#news .wrap > .subject > h3 {
         position: relative;
         top: -3px;
-        font: bold 30px/1 "Malgun gothic";
-        color: #000; }
+        font: bold 35px/1 "Malgun gothic";
+        color: #000;
+        letter-spacing: -1px; }
       section#news .wrap > .subject > p {
         margin-top: 20px; }
       section#news .wrap > .subject > a {
         margin-top: 30px;
         display: inline-block;
         background-color: #000;
-        padding: 10px 15px;
+        padding: 10px 25px;
         box-sizing: border-box;
         border-radius: 3px;
         font: normal 12px/1 "Malgun gothic";
         color: #fff; }
+        section#news .wrap > .subject > a > i {
+          margin-right: 5px; }
     section#news .wrap > .item {
       float: left;
       width: calc( ( 100% - 300px ) / 3 );
@@ -379,7 +411,9 @@ section#news {
       border: 1px solid #ccc;
       box-sizing: border-box; }
     section#news .wrap > .item:nth-of-type(3) {
-      background-color: #1455a9; }
+      background-color: #1455a9;
+      border: none;
+      box-shadow: 5px 5px 5px #aaa; }
 
 section#cooperation {
   width: 100%;
