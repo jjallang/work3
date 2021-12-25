@@ -4,6 +4,7 @@
 
 $width: 1180px;
 $heightHeaderTop: 100px;
+$heightVisualBg: 70vh;
 $primaryColor: royalblue;
 
 
@@ -14,13 +15,14 @@ $primaryColor: royalblue;
 }
 
 header#header {
-    width: 100%; height: 100vh;
+    width: 100%; height: $heightVisualBg;
     .visual {
+        width: 100%; height: $heightVisualBg;
+
         position: absolute;
         top: 0; left: 0; z-index: -1;
         display: block;
         background: url("../img/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat center/cover;
-        width: 100%; height: 100vh;
         -webkit-filter: brightness(.4);
         -moz-filter: brightness(.4);
         -o-filter: brightness(.4);
