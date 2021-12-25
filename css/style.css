@@ -195,21 +195,24 @@ section#detail1 {
         color: #000; }
   section#detail1 article:nth-of-type(5) {
     background-color: royalblue;
-    box-shadow: 5px 5px 5px #ccc; }
+    box-shadow: 5px 5px 5px #ccc;
+    position: relative;
+    overflow: hidden; }
     section#detail1 article:nth-of-type(5) > .icon > i {
       color: #fff; }
     section#detail1 article:nth-of-type(5) > .wrap > h1 {
       color: #fff; }
     section#detail1 article:nth-of-type(5) > .wrap > p {
       color: #fff; }
-    section#detail1 article:nth-of-type(5) > .wrap > div {
-      margin-top: 10px;
-      position: relative;
+    section#detail1 article:nth-of-type(5) > div.point {
+      position: absolute;
+      right: 0;
+      top: 0;
       width: 0;
       height: 0;
-      border-width: 0 0 40px 40px;
+      border-width: 0 0 50px 50px;
       border-style: solid;
-      border-color: transparent transparent blue;
+      border-color: transparent transparent orange;
       transform: rotate(-90deg); }
 
 /*# sourceMappingURL=style.css.map */
