@@ -74,6 +74,9 @@ header#header {
             color: #000;
             font-size: 20px;
             line-height: 40px; }
+          header#header .top > .wrap > .item > .icon:nth-of-type(2) {
+            border-color: royalblue;
+            color: #fff; }
         header#header .top > .wrap > .item > h2 {
           float: left;
           padding: 0 10px;
@@ -120,7 +123,7 @@ header#header {
           font-size: 14px;
           color: #000; }
   header#header .txt {
-    margin-top: 100px; }
+    margin-top: 8vh; }
     header#header .txt > h1 {
       font: normal 20px/1.1 "Malgun gothic";
       color: #fff; }
