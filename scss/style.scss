@@ -5,7 +5,7 @@
 $width: 1180px;
 $heightHeaderTop: 100px;
 $heightVisualBg: 70vh;
-$primaryColor: royalblue;
+$primaryColor: #1455a9;
 
 
 .inner {
@@ -224,6 +224,65 @@ section#detail1 {
             border-style: solid;
             border-color: transparent transparent orange;
             transform: rotate(-90deg);
+        }
+    }
+}
+
+section#detail2 {
+    width: 100%; height: 200px;
+    background-color: #e6eff4;
+    position: relative;
+
+    &::after {
+        content: ""; display: block; clear: both;
+    }
+
+    article {
+        float: left; 
+        width: 50%;
+        height: 110px;
+        position: relative; top: 25px;
+
+        background-color: transparent;
+        padding: 25px 15px; box-sizing: border-box;
+        &::after {
+            content: ""; display: block; clear: both;
+        }
+
+        >.icon {
+            float: left;
+            width: 40px; height: 40px;
+            text-align: center;
+            >i {
+                line-height: 40px; 
+                font-size: 30px; color: #555;
+            }
+        }
+        >.wrap {
+            float: right;
+            width: calc( 100% - 40px );
+            padding-left: 15px; box-sizing: border-box;
+            >h1 {
+                font: bold 16px/1 "Malgun gothic"; color: #000;
+            }
+            >p {
+                margin-top: 10px;
+                font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+            >a {
+                margin-top: 20px; 
+                display: inline-block;
+                background-color: #fff;
+                padding: 10px 15px; box-sizing: border-box;
+                font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+            >a:nth-of-type(1) {
+                margin-right: 10px;
+            }
+            >a:nth-of-type(2) {
+                background-color: $primaryColor;
+                color: #fff;
+            }
         }
     }
 }
