@@ -526,5 +526,12 @@ footer#footer {
       footer#footer ul.utils > li > a {
         font: normal 12px/1 "Malgun gothic";
         color: #fff; }
+    footer#footer ul.utils > li:last-child > ul::after {
+      content: "";
+      display: block;
+      clear: both; }
+    footer#footer ul.utils > li:last-child > ul > li {
+      float: left;
+      margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
