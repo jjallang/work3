@@ -334,7 +334,7 @@ section#inquiry {
         padding-left: 10px; }
       section#inquiry form#form > fieldset > input[type="checkbox"] {
         margin-left: 15px;
-        background-color: pink;
+        background-color: #3d4959;
         width: 17px;
         height: 17px;
         position: absolute;
