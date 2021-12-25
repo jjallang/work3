@@ -326,7 +326,7 @@ section#inquiry {
         height: 50px;
         border: none;
         border-radius: 3px;
-        font: normal 12px/1 "Malgun gothic";
+        font: normal 14px/1 "Malgun gothic";
         color: #000;
         padding-left: 10px; }
       section#inquiry form#form > fieldset > input[type="checkbox"] {
