@@ -71,11 +71,6 @@ header#header {
                         color: #000; font-size: 20px;
                         line-height: 40px;
                     }
-
-                    &:nth-of-type(2) {
-                        border-color: $primaryColor;
-                        color: #fff;
-                    }
                 }
                 >h2 {
                     float: left;
@@ -84,6 +79,14 @@ header#header {
                     width: 150px; height: 30px;
                     font: normal 14px/1.2 "Malgun gothic"; color: #fff; letter-spacing: -1px;
                     word-break: break-all;
+                }
+            }
+            >.item:nth-of-type(2) {
+                >.icon {
+                    background-color: $primaryColor;
+                    >i {
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -193,6 +196,129 @@ section#detail1 {
                 width: 100%;
                 margin-top: 20px;
                 font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+        }
+    }
+    article:nth-of-type(5) {
+        background-color: $primaryColor;
+        box-shadow: 5px 5px 5px #ccc;
+        >.icon {
+            >i {
+                color: #fff;
+            }
+        }
+        >.wrap {
+            >h1 {
+                color: #fff;
+            }
+            >p {
+                color: #fff;
+            }
+            >div:nth-of-type(1) {
+                /*
+                width: 50px;
+                height: 50px;
+                border: 2px solid orange;
+                */
+
+                /*
+                width: 50px;
+                height: 50px;
+                border: 40px solid;
+                border-color: orange blue red green;
+                */
+
+                /*
+                width: 0;
+                height: 0;
+                border: 40px solid;
+                border-color: orange blue red green;
+                */
+
+                /*
+                width: 0;
+                height: 0;
+                border: 40px solid;
+                border-color: transparent transparent red;
+                */
+
+                /*
+                width: 0;
+                height: 0;
+                border-width: 0 40px 40px;
+                border-style: solid;
+                border-color: transparent transparent red;
+                */
+                /* ----------- */
+
+                /*
+                position:relative;
+                width: 0;
+                height: 0;
+                border-width: 0 40px 40px 0;
+                border-style: solid;
+                border-color: transparent transparent blue;
+                */
+                /*
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    border-width: 0 40px 40px;
+                    border-style: solid;
+                    border-color: transparent transparent yellow;
+                }
+                */
+                /*
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: -38px;
+                    border-width: 0 38px 38px;
+                    border-style: solid;
+                    border-color: transparent transparent yellow;
+                }
+                */
+
+                position:relative;
+                width: 0;
+                height: 0;
+                border-width: 0 40px 40px 0;
+                border-style: solid;
+                border-color: transparent transparent blue;
+            }
+            >div:nth-of-type(2) {
+                margin-top: 10px;
+                position:relative;
+                width: 0;
+                height: 0;
+                border-width: 0 0 40px 40px;
+                border-style: solid;
+                border-color: transparent transparent blue;
+            }
+            >div:nth-of-type(3) {
+                margin-top: 10px;
+                position:relative;
+                width: 0;
+                height: 0;
+                border-width: 0 40px 40px 0;
+                border-style: solid;
+                border-color: transparent transparent blue;
+                transform: rotate(90deg);
+            }
+            >div:nth-of-type(4) {
+                margin-top: 10px;
+                position:relative;
+                width: 0;
+                height: 0;
+                border-width: 0 0 40px 40px;
+                border-style: solid;
+                border-color: transparent transparent blue;
+                transform: rotate(-90deg);
             }
         }
     }
