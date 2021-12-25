@@ -142,7 +142,7 @@ header#header {
       background-color: orange;
       padding: 10px 15px;
       box-sizing: border-box;
-      border-radius: 5px;
+      border-radius: 3px;
       font: normal 14px/1 "Malgun gothic";
       color: #fff; }
 
@@ -217,7 +217,7 @@ section#detail1 {
 
 section#detail2 {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: #e6eff4;
   position: relative; }
   section#detail2::after {
@@ -229,7 +229,7 @@ section#detail2 {
     width: 50%;
     height: 110px;
     position: relative;
-    top: 25px;
+    top: 40px;
     background-color: transparent;
     padding: 25px 15px;
     box-sizing: border-box; }
@@ -239,20 +239,20 @@ section#detail2 {
       clear: both; }
     section#detail2 article > .icon {
       float: left;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       text-align: center; }
       section#detail2 article > .icon > i {
-        line-height: 40px;
-        font-size: 30px;
+        line-height: 50px;
+        font-size: 50px;
         color: #3d4959; }
     section#detail2 article > .wrap {
       float: right;
-      width: calc( 100% - 40px );
+      width: calc( 100% - 50px );
       padding-left: 15px;
       box-sizing: border-box; }
       section#detail2 article > .wrap > h1 {
-        font: bold 16px/1 "Malgun gothic";
+        font: bold 22px/1 "Malgun gothic";
         color: #000; }
       section#detail2 article > .wrap > p {
         margin-top: 10px;
@@ -264,6 +264,7 @@ section#detail2 {
         background-color: #fff;
         padding: 10px 15px;
         box-sizing: border-box;
+        border-radius: 3px;
         font: normal 14px/1 "Malgun gothic";
         color: #000; }
       section#detail2 article > .wrap > a:nth-of-type(1) {
@@ -274,11 +275,11 @@ section#detail2 {
 
 section#inquiry {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #3d4959; }
   section#inquiry form#form {
     position: absolute;
-    top: 30px;
+    top: 20px;
     height: 30px; }
     section#inquiry form#form > fieldset {
       border: none;
@@ -286,7 +287,7 @@ section#inquiry {
       section#inquiry form#form > fieldset > input[type="text"] {
         height: 30px;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         font: normal 14px/1 "Malgun gothic";
         color: #000;
         padding-left: 15px;
@@ -295,15 +296,15 @@ section#inquiry {
         width: 100px;
         height: 32px;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         font: normal 12px/1 "Malgun gothic";
         color: #000;
         padding-left: 10px; }
       section#inquiry form#form > fieldset > input[type="checkbox"] {
         margin-left: 15px;
         background-color: pink;
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -322,7 +323,7 @@ section#inquiry {
         height: 40px;
         background-color: #222;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         font: normal 12px/1 "Malgun gothic";
         color: #fff;
         padding: 0 20px;
