@@ -278,7 +278,7 @@ section#inquiry {
   background-color: #3d4959; }
   section#inquiry form#form {
     position: absolute;
-    top: 35px;
+    top: 30px;
     height: 30px; }
     section#inquiry form#form > fieldset {
       border: none;
@@ -319,7 +319,7 @@ section#inquiry {
         margin-left: 30px; }
       section#inquiry form#form > fieldset > input[type="button"] {
         margin-left: 15px;
-        height: 30px;
+        height: 40px;
         background-color: #222;
         border: none;
         border-radius: 5px;
