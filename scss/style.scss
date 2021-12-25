@@ -6,6 +6,8 @@ $width: 1180px;
 $heightHeaderTop: 100px;
 $heightVisualBg: 70vh;
 $primaryColor: #1455a9;
+$subColor1: #e6eff4;
+$subColor2: #3d4959;
 
 
 .inner {
@@ -230,7 +232,7 @@ section#detail1 {
 
 section#detail2 {
     width: 100%; height: 250px;
-    background-color: #e6eff4;
+    background-color: $subColor1;
     position: relative;
 
     &::after {
@@ -255,7 +257,7 @@ section#detail2 {
             text-align: center;
             >i {
                 line-height: 50px; 
-                font-size: 50px; color: #3d4959;
+                font-size: 50px; color: $subColor2;
             }
         }
         >.wrap {
@@ -289,7 +291,7 @@ section#detail2 {
 }
 section#inquiry {
     width: 100%; height: 80px;
-    background-color: #3d4959;
+    background-color: $subColor2;
 
     form#form {
         position: absolute; top: 20px;
@@ -335,6 +337,45 @@ section#inquiry {
                 padding: 0 20px; box-sizing: border-box;
             }
 
+        }
+    }
+}
+section#news {
+
+}
+section#cooperation {
+    width: 100%; height: 50px;
+
+}
+section#aboutus {
+    width: 100%; height: 300px;
+    background-color: $subColor1;
+}
+footer#footer {
+    width: 100%; height: 80px;
+    background-color: $subColor2;
+
+    &::after {
+        content: ""; display: block; clear: both;
+    }
+
+    div.copyright {
+        float: left; position: relative; top: 20px;
+        padding: 10px 15px; box-sizing: border-box;
+        font: normal 12px/1 "Malgun gothic"; color: #fff;
+    }
+    ul.utils {
+        float: right; position: relative; top: 20px;
+
+        &::after {
+            content: ""; display: block; clear: both;
+        }
+        >li {
+            float: left;
+            padding: 0 15px; box-sizing: border-box;
+            >a {
+                font: normal 12px/1 "Malgun gothic"; color: #fff;
+            }
         }
     }
 }
