@@ -1,0 +1,192 @@
+@charset 'utf-8';
+
+@import 'reset.scss';
+
+$width: 1180px;
+$heightHeaderTop: 100px;
+$primaryColor: royalblue;
+
+
+.inner {
+    width: $width;
+    position: relative;
+    margin: 0 auto;
+}
+
+header#header {
+    width: 100%; height: 100vh;
+    .visual {
+        position: absolute;
+        top: 0; left: 0; z-index: -1;
+        display: block;
+        background: url("../img/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat center/cover;
+        width: 100%; height: 100vh;
+        -webkit-filter: brightness(.4);
+        -moz-filter: brightness(.4);
+        -o-filter: brightness(.4);
+        -ms-filter: brightness(.4);
+        filter: brightness(.4);
+    }
+    .top {
+        width: 100%; height: $heightHeaderTop;
+        background-color: transparent;
+        position: relative;
+
+        >h1 {
+            font: bold 30px/1 "Malgun gothic"; color: #fff;
+
+            height: 35px;
+            position: absolute; top: 50%; margin-top: calc(35px / -2);
+            left: 0;
+        }
+        >.wrap {
+            height: 35px;
+            position: absolute; top: 50%; margin-top: calc(35px / -2);
+            right: 0;
+
+            &::after {
+                content: ""; display: block; clear: both;
+            }
+
+            >.item {
+                float: left;
+                margin-left: 10px;
+                width: 220px;
+
+                &::after {
+                    content: ""; display: block; clear: both;
+                }
+
+                >.icon {
+                    float: left;
+
+                    background-color: #fff;
+                    width: 40px; height: 40px;
+                    border-radius: 50%;
+                    >i {
+                        text-align: center;
+                        width: 40px; height: 40px;
+                        color: #000; font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
+                >h2 {
+                    float: left;
+
+                    padding: 0 10px; box-sizing: border-box;
+                    width: 150px; height: 30px;
+                    font: normal 14px/1.2 "Malgun gothic"; color: #fff; letter-spacing: -1px;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+    nav {
+        margin-top: 20px;
+        width: 100%; height: 60px;
+        background-color: $primaryColor;
+        border-radius: 5px;
+
+        &::after {
+            content: ""; display: block; clear: both;
+        }
+        >div {
+            height: 35px;
+            position: relative; top: 50%; margin-top: calc(35px / -2);
+        }
+        >div:not(:last-child) {
+            float: left;
+            padding: 10px 15px; box-sizing: border-box;
+            font: normal 14px/1 "Malgun gothic"; color: #fff;
+            margin-left: 20px;
+        }
+        >div:last-child {
+            float: right; margin-right: 20px;
+
+            >.icon {
+                width: 30px; height: 30px;
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                >i {
+                    line-height: 30px; 
+                    font-size: 14px; color: #000;
+                }
+            }
+        }
+    }
+    .txt {
+        margin-top: 100px;
+        >h1 {
+            font: normal 20px/1.1 "Malgun gothic"; color: #fff;
+        }
+        >h2 {
+            font: bold 30px/1.1 "Malgun gothic"; color: #fff;
+        }
+        >p {
+            margin-top: 15px;
+            width: 30vw;
+            font: normal 14px/1.1 "Malgun gothic"; color: #fff;
+        }
+        >a {
+            margin-top: 40px;
+            display: inline-block;
+            background-color: orange;
+            padding: 10px 15px; box-sizing: border-box;
+            border-radius: 5px;
+            font: normal 14px/1 "Malgun gothic"; color: #fff;
+        }
+    }
+}
+section#detail1 {
+    width: 100%;
+    position: relative; top: -70px;
+
+    &::after {
+        content: ""; display: block; clear: both;
+    }
+
+    $detailArticleWidth : calc( ( 100% - 36px ) / 3 );
+    article {
+        float: left; 
+        width: $detailArticleWidth;
+        margin-right: 15px; margin-top: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc; box-sizing: border-box;
+        padding: 25px 15px; box-sizing: border-box;
+        border-radius: 5px;
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+
+        &::after {
+            content: ""; display: block; clear: both;
+        }
+
+        >.icon {
+            float: left;
+            width: 40px; height: 40px;
+            text-align: center;
+            >i {
+                line-height: 40px; 
+                font-size: 25px; color: #aaa;
+            }
+        }
+        >.wrap {
+            float: right;
+            width: calc( 100% - 40px);
+
+            padding: 10px 20px; box-sizing: border-box;
+            >h1 {
+                font: bold 16px/1 "Malgun gothic"; color: #000;
+
+            }
+            >p {
+                width: 100%;
+                margin-top: 20px;
+                font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+        }
+    }
+}
