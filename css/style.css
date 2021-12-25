@@ -329,6 +329,58 @@ section#inquiry {
         padding: 0 20px;
         box-sizing: border-box; }
 
+section#news {
+  width: 100%;
+  height: 440px;
+  background-color: #fff; }
+  section#news .wrap {
+    margin-top: 80px;
+    width: 100%;
+    height: 400px; }
+    section#news .wrap::after {
+      content: "";
+      display: block;
+      clear: both; }
+    section#news .wrap > .subject {
+      float: left;
+      width: 250px;
+      height: inherit;
+      margin-right: 50px;
+      padding: 15px;
+      box-sizing: border-box; }
+      section#news .wrap > .subject > h1 {
+        font: bold 14px/1 "Malgun gothic";
+        color: #000; }
+      section#news .wrap > .subject > h2 {
+        margin-top: 15px;
+        font: bold 22px/1 "Malgun gothic";
+        color: #000;
+        letter-spacing: -1px; }
+      section#news .wrap > .subject > h3 {
+        position: relative;
+        top: -3px;
+        font: bold 30px/1 "Malgun gothic";
+        color: #000; }
+      section#news .wrap > .subject > p {
+        margin-top: 20px; }
+      section#news .wrap > .subject > a {
+        margin-top: 30px;
+        display: inline-block;
+        background-color: #000;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font: normal 12px/1 "Malgun gothic";
+        color: #fff; }
+    section#news .wrap > .item {
+      float: left;
+      width: calc( ( 100% - 300px ) / 3 );
+      height: inherit;
+      border: 1px solid #ccc;
+      box-sizing: border-box; }
+    section#news .wrap > .item:nth-of-type(3) {
+      background-color: #1455a9; }
+
 section#cooperation {
   width: 100%;
   height: 50px; }
