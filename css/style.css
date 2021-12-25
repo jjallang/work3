@@ -108,6 +108,9 @@ header#header {
       position: relative;
       top: 50%;
       margin-top: calc(35px / -2); }
+      header#header nav > div > a {
+        font: normal 16px/1 "Malgun gothic";
+        color: #fff; }
     header#header nav > div:not(:last-child) {
       float: left;
       padding: 10px 15px;
