@@ -415,11 +415,37 @@ section#news {
             float: left;
             width: calc( ( 100% - 300px ) / 3 ); height: inherit;
             border: 1px solid #ccc; box-sizing: border-box;
+            padding: 15px 20px; box-sizing: border-box;
+            position: relative;
+            >.pic {
+                height: 100px;
+                background-color: pink;
+                >img {
+                    object-fit: cover;
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+            >h1 {
+                margin-top: 20px;
+                font: bold 16px/1 "Malgun gothic"; color: #000;
+            }
+            >p {
+                margin-top: 20px;
+                font: normal 14px/1 "Malgun gothic"; color: #000;
+            }
+            >h2 {
+                position: absolute; bottom: 30px;
+                font: normal 12px/1 "Malgun gothic"; color: #333;
+            }
         }
         >.item:nth-of-type(3) {
             background-color: $primaryColor;
             border: none;
             box-shadow: 5px 5px 5px #aaa;
+            >h1, >p, >h2 {
+                color: #fff;
+            }
         }
     }
 }

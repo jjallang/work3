@@ -409,11 +409,36 @@ section#news {
       width: calc( ( 100% - 300px ) / 3 );
       height: inherit;
       border: 1px solid #ccc;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      position: relative; }
+      section#news .wrap > .item > .pic {
+        height: 100px;
+        background-color: pink; }
+        section#news .wrap > .item > .pic > img {
+          object-fit: cover;
+          height: 100px;
+          width: 100%; }
+      section#news .wrap > .item > h1 {
+        margin-top: 20px;
+        font: bold 16px/1 "Malgun gothic";
+        color: #000; }
+      section#news .wrap > .item > p {
+        margin-top: 20px;
+        font: normal 14px/1 "Malgun gothic";
+        color: #000; }
+      section#news .wrap > .item > h2 {
+        position: absolute;
+        bottom: 30px;
+        font: normal 12px/1 "Malgun gothic";
+        color: #333; }
     section#news .wrap > .item:nth-of-type(3) {
       background-color: #1455a9;
       border: none;
       box-shadow: 5px 5px 5px #aaa; }
+      section#news .wrap > .item:nth-of-type(3) > h1, section#news .wrap > .item:nth-of-type(3) > p, section#news .wrap > .item:nth-of-type(3) > h2 {
+        color: #fff; }
 
 section#cooperation {
   width: 100%;
